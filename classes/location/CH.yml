@@ -1,0 +1,3 @@
+parameters:
+  location: ""
+  location__country-code: "CH"
