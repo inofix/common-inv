@@ -48,22 +48,3 @@ Note: Always reference first the other hosts and only then the host
 in question to make sure the current host will have set its parameters
 last in order to overwrite other values.
 
-## Order of Classes in Nodes ##
-
-<!-- -meta- basic -->
-As classes are parsed in the order appearing - remember the rule is depth
-search, process only once - a class that uses the parameters of another
-class must come after that class. Usually the following order should work:
-
- * start with the `os` as this is straightforward
- * followed by the `host` as this is host specific and should not contain
-   too much information that can be shared
- * then use the `project` class, as this will trigger the switch for the
-   little more sharable infos
- * the class `app` should be independent of everything else and just contain
-   app related stuff. It is a good idea to reference `app` classes early.
- * classes in `services` typically reference the `app` classes.
- * finally the variables in the `role` classes can be set using the
-   ones from apps and services in combination with the variables from
-   hosts/projects
- 
