@@ -1,4 +1,4 @@
-### Os Class ###
+### OS Class ###
 
 <!-- -meta- basic -->
 This collection is thought to contain the meta information
