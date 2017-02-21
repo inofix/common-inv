@@ -1,0 +1,11 @@
+parameters:
+  admins:
+    Example:
+      fullname: "Example User"
+      email: "admin@example.org"
+      ssh_keys:
+        - 'ssh-rsa .. admin@example.org'
+      username: 'nobody'
+      groupname: 'nogroup'
+      uid: '65534'
+      gid: '65534'

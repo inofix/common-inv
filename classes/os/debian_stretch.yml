@@ -1,0 +1,6 @@
+classes:
+  - os.debian
+
+parameters:
+  os__codename: stretch
+
