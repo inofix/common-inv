@@ -1,0 +1,8 @@
+parameters:
+  os__mirror: 'ftp.ch.debian.org'
+  os__type: 'GNU/Linux'
+  os__distro: 'debian'
+  os__codename: 'stable'
+  os__base_config_files:
+    - '/etc/fstab'
+  os__cert_group: 'ssl-cert'
