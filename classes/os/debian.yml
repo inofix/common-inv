@@ -5,4 +5,5 @@ parameters:
   os__codename: 'stable'
   os__base_config_files:
     - '/etc/fstab'
+    - '/etc/hosts'
   os__cert_group: 'ssl-cert'
