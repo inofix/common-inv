@@ -10,21 +10,3 @@ parameters:
   os__installer_files: '{{ os__installer_base[os_distro][os_codename][target_arch] }}'
   os__installer_base:
     debian:
-      jessie:
-        amd64:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.7/main/installer-amd64/current/images/MANIFEST'
-            dest: '{{ os__tmp_images_dir }}/MANIFEST'
-            checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
-            virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.7/main/installer-amd64/current/images/MANIFEST.udebs'
-            dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
-            checksum: 'sha256:4aad15acaef7e684c69f73989ac2eda5440000c546a62aee640e8eb980811046'
-            virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.7/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
-            dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:8c29f48b0bed49477775a1640be6f9f0271ad10678115e3a1076192fc715a967'
-            virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.7/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
-            dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'sha256:951cea84dd488e3d4bfd7b3c55373fc48f4f21c5404a9204a72993ac3aa169d4'
-            virt_install: True
