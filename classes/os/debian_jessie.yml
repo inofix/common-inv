@@ -5,20 +5,6 @@ parameters:
   os__codename: jessie
   os__version: 8.8
   os__packer-template: "{{ packer_templates }}/debian-jessie/Debian-Jessie-8.5-x86_64.json"
-  os__tmp_base_dir: '/var/tmp/qemu-dist-installer-copy'
-  os__tmp_installer_dir: '{{ os__tmp_base_dir }}/installer-{{ target_arch }}'
-  os__tmp_images_dir: '{{ os__tmp_installer_dir }}/current/images'
-  os__tmp_image_dir: '{{ os__tmp_images_dir }}/netboot/debian-installer/{{ target_arch }}'
-# only used in roles/create_vm ..
-#  os__installer_templates:
-#    - src: 'preseed.j2'
-#      dest: '{{ host__dist_installer }}/preseed.cfg'
-#    - src: 'late_script.sh'
-#      dest: '{{ host__dist_installer }}/late_script.sh'
-#    - src: 'debian_postinstall.sh'
-#      dest: '{{ os__tmp_base_dir }}/debian_postinstall.sh'
-#    - src: 'inofix_base.sh'
-#      dest: '{{ os__tmp_base_dir }}/inofix_base.sh'
   os__installer_base:
     debian:
       jessie:
