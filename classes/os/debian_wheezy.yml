@@ -1,5 +1,6 @@
 classes:
   - os.debian
+  - os.debian_wheezy_files
 
 parameters:
   os__codename: wheezy
