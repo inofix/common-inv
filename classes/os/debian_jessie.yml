@@ -4,5 +4,5 @@ classes:
 
 parameters:
   os__codename: jessie
-  os__version: 8.8
+  os__version: 8.9
   os__packer-template: "{{ packer_templates }}/debian-jessie/Debian-Jessie-8.5-x86_64.json"
