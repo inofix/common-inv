@@ -13,7 +13,7 @@ parameters:
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian7.11/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:aea3d6e0b714c9fa05e300eeb40be22eeed24e3bd4fc99a8c9490b804882755e'
+            checksum: 'sha256:00d212268a24db3d56954125bc95dbf3ce127206beb86d8555626456eca3e056'
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian7.11/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
