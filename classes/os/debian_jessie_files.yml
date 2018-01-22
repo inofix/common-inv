@@ -3,19 +3,19 @@ parameters:
     debian:
       jessie:
         amd64:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.9/main/installer-amd64/current/images/MANIFEST'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.10/main/installer-amd64/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
             checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.9/main/installer-amd64/current/images/MANIFEST.udebs'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.10/main/installer-amd64/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
-            checksum: 'sha256:dc94209543dca172ee25b0a4ab9334eff5a5650ab30f8420929ed5d71b279234'
+            checksum: 'sha256:59e0f7f0e5f9d4fd4de092aadcc7278929fac130637f9b6df92ed0f246aaa75c'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.9/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.10/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:a37366e799da2b57b5d844b5b267c6915219f5de386de6950bf9b1bfd95c1b6e'
+            checksum: 'sha256:d916d00efe347914089d80d221c7eafffb0001836dba81b6ace1c52bb972cd63'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.9/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian8.10/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'sha256:c54ac3fdec55d9aeeedda256e3e85111b900f976b725e910b2d6973b454c7aad'
+            checksum: 'sha256:068cf17263ee682d7cc1a939fe71ce3a99ba7d70ca1fa271f23f4f6eb7fa5918'
             virt_install: True
