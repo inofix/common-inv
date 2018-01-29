@@ -3,6 +3,7 @@ parameters:
   os__type: 'GNU/Linux'
   os__distro: 'debian'
   os__codename: 'stable'
+  os__short: '${os__distro}_${os__codename}'
   os__base_config_files:
     - '/etc/fstab'
     - '/etc/hosts'
