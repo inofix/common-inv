@@ -3,19 +3,19 @@ parameters:
     debian:
       wheezy:
         amd64:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian7.11/main/installer-amd64/current/images/MANIFEST'
+          - url: 'http://${os__mirror}/debian/dists/Debian7.11/main/installer-amd64/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
             checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian7.11/main/installer-amd64/current/images/MANIFEST.udebs'
+          - url: 'http://${os__mirror}/debian/dists/Debian7.11/main/installer-amd64/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
             checksum: 'sha256:6d18153be6a95f6a78260b8f76e1861f8d8266a6ef30efe22605b51eea212e04'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian7.11/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
+          - url: 'http://${os__mirror}/debian/dists/Debian7.11/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
             checksum: 'sha256:00d212268a24db3d56954125bc95dbf3ce127206beb86d8555626456eca3e056'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian7.11/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
+          - url: 'http://${os__mirror}/debian/dists/Debian7.11/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
             checksum: 'sha256:02a2bfa08a4d80e793e78c96b8a4076fa58da430d0c309b83e7f9837d4e096eb'
             virt_install: True
