@@ -1,0 +1,6 @@
+---
+# This class denotes hosts that sign directly with the Let's Encrypts service
+
+classes:
+  - app.acme
+
