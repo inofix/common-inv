@@ -1,0 +1,20 @@
+---
+# This class provides the acme-tiny tool
+
+classes:
+  - app.acme.sign
+
+applications:
+  - acme-tiny
+
+parameters:
+  app__acme__tiny__download_upstream: "https://raw.githubusercontent.com/diafygi/acme-tiny/master/acme_tiny.py"
+  app__acme__tiny__checksum: "sha256:660bd83e341c374d685253e8d5227d5d5e0a2cabd663b0619736c0a5265f67e7"
+  app__acme__tiny__config_dir: '${app__acme__config_dir}'
+  app__acme__tiny__cron_minute: '2,22,42'
+  app__acme__tiny__cron_hour: '3,4'
+  app__acme__tiny__cron_day: '*'
+  app__acme__tiny__cron_month: '*'
+  app__acme__tiny__cron_weekday: '*'
+  app__acme__tiny__log_dir: '${app__acme__log_dir}'
+
