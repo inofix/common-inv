@@ -1,0 +1,36 @@
+---
+classes:
+  - app.openssl
+
+applications:
+  - apache
+
+parameters:
+  os__pkg_name:
+    apache:
+      debian:
+        - "apache2"
+        - "ssl-cert"
+    apache_mod:
+      debian:
+        jk: 'libapache2-mod-jk'
+        fcgid: 'libapache2-mod-fcgid'
+        shib2: 'libapache2-mod-shib2'
+        php5: 'libapache2-mod-php5'
+  app__apache__user: 'www-data'
+  app__apache__group: 'www-data'
+  service__webserver__user: ${app__apache__user}
+  service__webserver__group: ${app__apache__group}
+  app__apache__sites_dir: /etc/apache2/sites-available
+  app__apache__cipher_prefered_suite: 'explicit'
+  app__apache__cipher_suite: ${app__openssl__cipher_suites:explicit}
+  app__apache__honor_cipher_order: 'on'
+  app__apache__config_files:
+    - "/etc/apache2/ports.conf"
+    - "/etc/apache2/mods-available/ssl.conf"
+  app__apache__modules:
+  service__websites__dir: ${app__apache__sites_dir}
+  service__websites_owner: root
+  service__websites_group: root
+  service__websites_mode: 644
+
