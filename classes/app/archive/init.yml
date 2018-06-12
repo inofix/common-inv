@@ -1,0 +1,6 @@
+---
+# "not standard" archiving software
+applications:
+  - zip
+  - unzip
+
