@@ -1,0 +1,20 @@
+applications:
+  - backupninja
+
+parameters:
+  # the main configuration file
+  app__backupninja__config: /etc/backupninja.conf
+  # the common tasks directory
+  app__backupninja__d: /etc/backup.d
+  # the list of task files without passwords
+  app__backupninja__d_task:
+# example app__backupninja__d_task:
+#    - file: "/etc/backup.d/90-final.dup"
+#      credentials: true
+#      dup: true
+  # for an optional user to be created on installation see service.backup
+  re-merge:
+    custom:
+      backup-main:
+        file: ${app__backupninja__config}
+        dest: ${project_destination}/backupninja/backupninja.${hostname}.conf

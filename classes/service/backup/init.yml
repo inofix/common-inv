@@ -1,0 +1,13 @@
+classes:
+  - app.backupninja
+  - app.duplicity
+  - app.rdiff-backup
+
+parameters:
+  service__backup__directory: "/srv/backups"
+  service__backup__mount_point: "/mnt/backup"
+  service__backup__create_user: True
+  service__backup__user: 'backup'
+  service__backup__group: 'backup'
+#  re-merge:
+#    custom:
