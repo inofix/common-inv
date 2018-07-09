@@ -1,0 +1,12 @@
+classes:
+  - service.backup
+  - service.backup.postgres
+  - app.sshfs
+
+parameters:
+  re-merge:
+    custom:
+      backup-postgres-liferay:
+        file: ${app__backupninja__d}/21.pgsql
+        dest: ${project_destination}/postgresql/backup.d/
+

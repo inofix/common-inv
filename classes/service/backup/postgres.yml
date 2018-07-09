@@ -1,0 +1,11 @@
+classes:
+  - service.backup
+  - app.postgresql.server
+
+parameters:
+  re-merge:
+    custom:
+      backup-postgres-all:
+        file: ${app__backupninja__d}/20.pgsql
+        dest: ${project_destination}/postgresql/backup.d/
+
