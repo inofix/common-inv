@@ -4,5 +4,5 @@ classes:
 
 parameters:
   app__elasticsearch__checksum: 'sha1:5150c33ccd104a9ce8b7040eeb5b68cb9ee32a70'
-  app__elasticsearch__deb_checksum: 'sha1:2a6c79c936ce6fb66cbde39a2e8e344e8b361dcc'
+  app__elasticsearch__checksum_deb: 'sha1:2a6c79c936ce6fb66cbde39a2e8e344e8b361dcc'
   app__elasticsearch__version: '2.4.0'
