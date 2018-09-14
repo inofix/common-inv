@@ -3,4 +3,5 @@ parameters:
   app__elasticsearch__download_upstream: 'https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/${app__elasticsearch__version}/elasticsearch-${app__elasticsearch__version}.tar.gz'
   app__elasticsearch__download_upstream_deb: 'https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/deb/elasticsearch/${app__elasticsearch__version}/elasticsearch-${app__elasticsearch__version}.deb'
   app__elasticsearch__config:
-  app__elasticsearch__home: '/srv/elasticsearch-${app__elasticsearch__version}'
+  app__elasticsearch__home: '/usr/share/elasticsearch'
+  app__elasticsearch__plugins:

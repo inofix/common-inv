@@ -11,7 +11,7 @@ parameters:
   os__installer_files: '{{ os__installer_base[os_distro][os_codename][target_arch] }}'
   os__installer_base:
     debian:
-  os__tmp_base_dir: '/var/tmp/qemu-dist-installer-copy'
+  os__tmp_base_dir: '/var/tmp/qemu-dist-installer-copy-{{ ansible_user_id }}'
   os__tmp_installer_dir: '{{ os__tmp_base_dir }}/installer-{{ target_arch }}'
   os__tmp_images_dir: '{{ os__tmp_installer_dir }}/current/images'
   os__tmp_image_dir: '{{ os__tmp_images_dir }}/netboot/debian-installer/{{ target_arch }}'
