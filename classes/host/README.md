@@ -6,7 +6,8 @@ information how they are hosted.
 
 <!-- -meta- detail -->
 Every node has its own resource description in this directory. This information
-can be used both by the node itself and by its host (virtualization-host).
+can be used both by the node itself and by its host (virtualization-host) - or
+maybe even by some partner host (e.g. a router/firewall/load-balancer).
 
 <!-- -meta- detail -->
 The host should always first reference its guests and only then itself to make
