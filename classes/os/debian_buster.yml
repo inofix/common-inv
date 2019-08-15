@@ -1,0 +1,8 @@
+classes:
+  - os.debian
+  - os.debian_buster_files
+
+parameters:
+  os__codename: buster
+  os__version: 10.0
+
