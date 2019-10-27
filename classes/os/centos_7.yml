@@ -1,0 +1,9 @@
+classes:
+  - os.centos
+
+parameters:
+  os__codename: 7
+  os__version: 7
+
+  # Make sure we always use Python 2
+  ansible_python_interpreter: /usr/bin/python

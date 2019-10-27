@@ -1,4 +1,4 @@
 parameters:
-  os__type: GNU/Linux
-  os__distro: centos
+  os__type: 'GNU/Linux'
+  os__distro: 'centos'
 
