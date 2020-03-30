@@ -19,4 +19,6 @@ It has proven quite useful to name actual node with files starting with a
 lowercase letter and with their fqdn in reverse order, e.g.
 "testhost.example.net" becomes "net\_example\_testhost.yml". On the
 other hand the node's host or it's type can be summarized in files
-starting with a captial letter, e.g. "Host\_net\_example\_kvmhost42.yml".
+starting with a captial letter, e.g. "Host\_net\_example\_kvmhost42.yml"
+or "Virtual.yml".
+
