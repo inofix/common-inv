@@ -1,0 +1,9 @@
+---
+applications:
+  - lxc
+
+parameters:
+  os__pkg_name:
+    lxc:
+      debian:
+        - "lxc"
