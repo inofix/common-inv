@@ -1,4 +1,0 @@
-parameters:
-  host__type_human_readable: 'Linux Container'
-  host__type: 'lxc'
-
