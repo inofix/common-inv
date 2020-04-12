@@ -1,0 +1,4 @@
+---
+classes:
+  - host.KVM
+  - host.Virtual
