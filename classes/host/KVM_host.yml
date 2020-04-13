@@ -1,0 +1,7 @@
+---
+classes:
+  - host.KVM
+
+parameters:
+  host__guest_hypervisor_type: 'KVM'
+
