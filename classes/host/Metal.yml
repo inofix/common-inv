@@ -1,4 +1,4 @@
-parameters: 
+parameters:
   host__type_human_readable: 'Physical Machine'
   host__type: 'phy'
 
