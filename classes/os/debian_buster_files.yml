@@ -3,36 +3,36 @@ parameters:
     debian:
       buster:
         amd64:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-amd64/current/images/MANIFEST'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
             checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-amd64/current/images/MANIFEST.udebs'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
-            checksum: 'sha256:aa4fd977a51a7326a729990a989aa5609600470d2c104b0218bba7f97a5d4ae7'
+            checksum: 'sha256:c2ea4addb1760828dd63ace2023ebc3895961343bdbbe5fa38e5cf01587cc3a6'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:a38db218911a94ec2d7172ed7d2799e385f0fdb97fd653e6ac29f8147227c7b5'
+            checksum: 'sha256:f19ca7c0cb4c088ba6cb3b4613f771b288f3d56702dbf0766a4779730787b817'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'sha256:d7b17feb2fbba32e4c88c085748dabef6c162763ce27d398703a3d69b7be3eb3'
+            checksum: 'sha256:c9dfc5ba8f2eda0b9be72375bea08cdf95d61e49d1bd81d3c11ace388d24178e'
             virt_install: True
         i386:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-i386/current/images/MANIFEST'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
             checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-i386/current/images/MANIFEST.udebs'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
-            checksum: 'sha256:f0d9295fa5cc5f57d5cc9ab19c4219fe85769f7aa4763d8b3ccbfa52aa7eef51'
+            checksum: 'sha256:9647e0dc025bc0c17e81ee48fb27c93bf99929adba0c8148b5d1ca5f9f8505d2'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-i386/current/images/netboot/debian-installer/i386/initrd.gz'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/netboot/debian-installer/i386/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:d7748db6c20e4909cd79b3e578fb7bbf4456d860a6559e8d70bd765749a418c7'
+            checksum: 'sha256:d02e113fab017506eb0d07fe42f75936e749efac9229a5bf57854e946b8ac714'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.3/main/installer-i386/current/images/netboot/debian-installer/i386/linux'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/netboot/debian-installer/i386/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'sha256:79387832730326198912d9f10d6b3f4c5b371628282bb4b4f08e6d1a0f737c9a'
+            checksum: 'sha256:bbced99cda12fde04c06c5c302be70a339d9aceba7e44210584449540bf3f50c'
             virt_install: True
