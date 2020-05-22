@@ -29,6 +29,7 @@ parameters:
     - "/etc/apache2/ports.conf"
     - "/etc/apache2/mods-available/ssl.conf"
   app__apache__modules:
+  app__apache__configs:
   service__websites__dir: ${app__apache__sites_dir}
   service__websites_owner: root
   service__websites_group: root

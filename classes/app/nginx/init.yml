@@ -21,7 +21,6 @@ parameters:
   app__nginx__honor_cipher_order: 'on'
   app__nginx__config_files:
     - "/etc/nginx/nginx.conf"
-  app__apache__modules:
   service__websites__dir: ${app__nginx__sites_dir}
   service__websites_owner: root
   service__websites_group: root
