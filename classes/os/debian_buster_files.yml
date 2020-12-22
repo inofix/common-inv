@@ -1,38 +1,39 @@
 parameters:
+  os__files_version: 10.7
   os__installer_base:
     debian:
       buster:
         amd64:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/MANIFEST'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
             checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/MANIFEST.udebs'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
             checksum: 'sha256:7095bdd2d070bd1c8a9a34886455035c5fb7a6d20e3b6206d19d6ee6e8085f98'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
             checksum: 'sha256:147183c23d3ff5bc0cdf9fb0aa4d432bd07f4ce08fbeb350c820be1b06a5a98e'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
             checksum: 'sha256:68b2fd19ac7d0d1dc7dddb7ce837c0aa61d769efb75c9b89d7a449bf978d2ccc'
             virt_install: True
         i386:
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/MANIFEST'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
             checksum: 'sha256:82f69d557f0004d2923fb03e4fb47d18187e37768dbfd0c99756f8a6c68a6d3a'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/MANIFEST.udebs'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
             checksum: 'sha256:24ce5e1f13b47c6c7798360e59d91dabf37b9fdc2b56a881d5f51b16723cee3f'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/netboot/debian-installer/i386/initrd.gz'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/netboot/debian-installer/i386/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
             checksum: 'sha256:00192917ea6f9ec8d6e8ede47308358674c8ec0ba4abe6c471c52f54ded26a9c'
             virt_install: True
-          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian10.4/main/installer-i386/current/images/netboot/debian-installer/i386/linux'
+          - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/netboot/debian-installer/i386/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
             checksum: 'sha256:c3248e1ac79781bb40c3a481321de44268138f7df03333bbf7a093f6104f1f21'
             virt_install: True

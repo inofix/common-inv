@@ -5,4 +5,3 @@ classes:
 parameters:
   os__codename: buster
   os__version: 10.7
-
