@@ -1,0 +1,7 @@
+---
+classes:
+  - host.LXC
+
+parameters:
+  host__guest_hypervisor_type: 'LXC'
+

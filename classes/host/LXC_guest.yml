@@ -1,0 +1,7 @@
+---
+classes:
+  - host.LXC
+
+parameters:
+  host__type: 'lxc'
+  host__type_human_readable: 'Linux Container'

@@ -1,3 +1,4 @@
+---
 parameters:
   host__type_human_readable: "Virtual Machine"
   host__type: 'vm'

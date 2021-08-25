@@ -1,3 +1,27 @@
 ---
+classes:
+  - app.openssl
+
 applications:
   - nginx
+
+parameters:
+  os__pkg_name:
+    nginx:
+      debian:
+        - "nginx"
+        - "ssl-cert"
+  app__nginx__user: 'www-data'
+  app__nginx__group: 'www-data'
+  service__webserver__user: ${app__nginx__user}
+  service__webserver__group: ${app__nginx__group}
+  app__nginx__sites_dir: /etc/nginx/sites-available
+  app__nginx__cipher_prefered_suite: 'explicit'
+  app__nginx__cipher_suite: ${app__openssl__cipher_suites:explicit}
+  app__nginx__honor_cipher_order: 'on'
+  app__nginx__config_files:
+    - "/etc/nginx/nginx.conf"
+  service__websites__dir: ${app__nginx__sites_dir}
+  service__websites_owner: root
+  service__websites_group: root
+  service__websites_mode: 644
