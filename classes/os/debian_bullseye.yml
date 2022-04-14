@@ -3,5 +3,5 @@ classes:
   - os.debian_buster_files
 
 parameters:
-  os__codename: buster
-  os__version: 10.12
+  os__codename: bullseye
+  os__version: 11.3
