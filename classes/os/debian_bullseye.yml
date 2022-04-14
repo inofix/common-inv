@@ -1,6 +1,6 @@
 classes:
   - os.debian
-  - os.debian_buster_files
+  - os.debian_bullseye_files
 
 parameters:
   os__codename: bullseye
