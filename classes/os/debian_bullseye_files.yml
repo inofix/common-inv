@@ -2,7 +2,7 @@ parameters:
   os__files_version: 11.3
   os__installer_base:
     debian:
-      buster:
+      bullseye:
         amd64:
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
