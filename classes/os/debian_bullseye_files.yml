@@ -18,7 +18,7 @@ parameters:
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'c5500987889bca74fc457541fec9b55b8b6092827032821d3e351e84dcb04ff2'
+            checksum: 'sha256:c5500987889bca74fc457541fec9b55b8b6092827032821d3e351e84dcb04ff2'
             virt_install: True
         i386:
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/MANIFEST'
