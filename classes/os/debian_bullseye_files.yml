@@ -1,5 +1,5 @@
 parameters:
-  os__files_version: 11.3
+  os__files_version: 11.4
   os__installer_base:
     debian:
       bullseye:
