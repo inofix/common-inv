@@ -1,0 +1,17 @@
+---
+applications:
+  - docker
+  - docker-compose
+
+parameters:
+  os__pkg_name:
+    docker:
+      debian:
+        - "docker.io"
+        - "docker-compose"
+  app__docker__vg_name: ""
+  app__docker__lv_name: ""
+  app__docker__lv_size: ""
+  app__docker__fs_type: ""
+  app__docker__fs_options: "noatime,nodev,nosuid"
+  app__docker__path: "/var/lib/docker"
