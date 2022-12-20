@@ -4,4 +4,4 @@ classes:
 
 parameters:
   os__codename: bullseye
-  os__version: 11.4
+  os__version: 11.6
