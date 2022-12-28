@@ -1,0 +1,7 @@
+classes:
+
+parameters:
+  os__repository:
+    backports:
+      deb: "deb http://deb.debian.org/debian/ {{ os__codename }}-backports main contrib"
+      deb_src: "deb-src http://deb.debian.org/debian/ {{ os__codename }}-backports main contrib"

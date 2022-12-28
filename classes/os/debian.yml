@@ -15,6 +15,16 @@ parameters:
   os__tmp_installer_dir: '{{ os__tmp_base_dir }}/installer-{{ target_arch }}'
   os__tmp_images_dir: '{{ os__tmp_installer_dir }}/current/images'
   os__tmp_image_dir: '{{ os__tmp_images_dir }}/netboot/debian-installer/{{ target_arch }}'
+  os__repository:
+    default:
+      deb: "deb http://deb.debian.org/debian/ {{ os__codename }} main contrib"
+      deb_src: "deb-src http://deb.debian.org/debian/ {{ os__codename }} main contrib"
+    security:
+      deb: "deb http://security.debian.org/debian-security {{ os__codename }}-security main contrib"
+      deb_src: "deb-src http://security.debian.org/debian-security {{ os__codename }}-security main contrib"
+    updates:
+      deb: "deb http://deb.debian.org/debian/ {{ os__codename }}-updates main contrib"
+      deb_src: "deb-src http://deb.debian.org/debian/ {{ os__codename }}-updates main contrib"
 # only used in roles/create_vm ..
 #  os__installer_templates:
 #    - src: 'preseed.j2'
