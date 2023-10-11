@@ -9,8 +9,8 @@ applications:
 
 parameters:
   app__acme__tiny__download_upstream: "https://raw.githubusercontent.com/diafygi/acme-tiny/master/acme_tiny.py"
-  app__acme__tiny__checksum: "sha256:dc3c903af4307dd648053b4f40d6d9bc2faea136de1abd87f21dcf7744b353dd"
-  app__acme__tiny__version: "4.0.0"
+  app__acme__tiny__checksum: "sha256:39f5d8c694de45954d21b20407937e6b1289f8bec01603ae3de84a72408e15e2"
+  app__acme__tiny__version: "5.0.1"
   app__acme__tiny__config_dir: '${app__acme__config_dir}'
   app__acme__tiny__cron_minute: '2,22,42'
   app__acme__tiny__cron_hour: '3,4'
