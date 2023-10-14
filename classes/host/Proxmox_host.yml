@@ -1,0 +1,7 @@
+---
+classes:
+  - host.Proxmox
+
+parameters:
+  host__guest_hypervisor_type: 'Proxmox KVM'
+
