@@ -1,0 +1,10 @@
+---
+applications:
+  - ntpdate
+
+parameters:
+  os__pkg_name:
+    ntpdate:
+      debian:
+        - "ntp"
+        - "ntpdate"
