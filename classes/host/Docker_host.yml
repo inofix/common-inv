@@ -1,0 +1,7 @@
+---
+classes:
+  - host.Docker
+
+parameters:
+  host__guest_hypervisor_type: 'Docker'
+

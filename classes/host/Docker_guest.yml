@@ -1,0 +1,7 @@
+---
+classes:
+  - host.Docker
+
+parameters:
+  host__type: 'docker'
+  host__type_human_readable: 'Docker Container'
