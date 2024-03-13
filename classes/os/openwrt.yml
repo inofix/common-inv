@@ -1,0 +1,13 @@
+parameters:
+  os__mirror: 'https://openwrt.mirror.garr.it/mirrors/openwrt/'
+  os__type: 'GNU/Linux'
+  os__distro: 'OpenWrt'
+  os__codename: 'stable'
+  os__short: '${os__distro}_${os__codename}'
+  os__base_config_files:
+    - '/etc/fstab'
+    - '/etc/hosts'
+  os__cert_group: 'ssl-cert'
+  os__installer_files: '{{ os__installer_base[os_distro][os_codename][target_arch] }}'
+  os__installer_base:
+    openwrt:
