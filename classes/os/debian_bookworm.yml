@@ -1,7 +1,7 @@
 classes:
   - os.debian
-  - os.debian_bullseye_files
+  - os.debian_bookworm_files
 
 parameters:
-  os__codename: bullseye
-  os__version: 12.2
+  os__codename: bookworm
+  os__version: 12.5

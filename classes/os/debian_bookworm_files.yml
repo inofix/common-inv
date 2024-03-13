@@ -1,8 +1,8 @@
 parameters:
-  os__files_version: 12.2
+  os__files_version: 12.5
   os__installer_base:
     debian:
-      bullseye:
+      bookworm:
         amd64:
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/MANIFEST'
             dest: '{{ os__tmp_images_dir }}/MANIFEST'
@@ -10,15 +10,15 @@ parameters:
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
-            checksum: 'sha256:42fede52552d1020f675e6901f08c0833c7e93359990bae7fe4c30b599dadc81'
+            checksum: 'sha256:95d53ede3e2baa4c9cef11e2d88b4aa0065d9bb943676c180001cfab819ab34a'
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/netboot/debian-installer/amd64/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:7efc47a2fee8a562178dd809516d3d1e6e0a61303f7bd24b5a2f724797a30a0f'
+            checksum: 'sha256:fe745deb49bf5cd41a60885584d44f242b0ccf181ded73cd2667d2224d89254a'
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-amd64/current/images/netboot/debian-installer/amd64/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'sha256:650a11cc77e215997e4fec91b971be64e108d753aa174838a3d963f10b327f7e'
+            checksum: 'sha256:1f68dd588ec45f7d5915740921ec29ddfc3ce5da802059984ba47ec79a19c206'
             virt_install: True
         i386:
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/MANIFEST'
@@ -27,13 +27,13 @@ parameters:
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/MANIFEST.udebs'
             dest: '{{ os__tmp_images_dir }}/MANIFEST.udeps'
-            checksum: 'sha256:d29fe8eeeffbd0f3f2aee7bf2870454850c5b308576b0863d8664e7be592b1f2'
+            checksum: 'sha256:b355357b6640f37dea823e1ef4093a6ad151fead6095dfd9f4d91c2dfb0e944c'
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/netboot/debian-installer/i386/initrd.gz'
             dest: '{{ os__tmp_image_dir }}/initrd.gz'
-            checksum: 'sha256:d084211bd36546d12a9cad2dd6577898a6ec12d02593f8025c6c2f9486e5b8d5'
+            checksum: 'sha256:c10c5059aef556c08f89046ad1aa2aee3032ebff18b2bc49d6e74265dd93e02e'
             virt_install: True
           - url: 'http://ftp.uni-stuttgart.de/debian/dists/Debian${os__files_version}/main/installer-i386/current/images/netboot/debian-installer/i386/linux'
             dest: '{{ os__tmp_image_dir }}/linux'
-            checksum: 'sha256:8fdb3e7811a5ae46e74d355c1238d47005e6ab91962737ad671dd6282f0bb5ab'
+            checksum: 'sha256:99a8f4ed898a556db29fa4a324b96b02a71d8d5aa6c140ff9a562d92d49d0856'
             virt_install: True
