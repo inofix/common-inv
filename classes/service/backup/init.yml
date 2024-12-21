@@ -1,7 +1,8 @@
 classes:
-  - app.backupninja
-  - app.duplicity
-  - app.rdiff-backup
+  #- app.backupninja
+  #- app.duplicity
+  #- app.rdiff-backup
+  #- app.nextcloud.backup
 
 parameters:
   service__backup__directory: "/srv/backups"
