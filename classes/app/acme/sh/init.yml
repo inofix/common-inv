@@ -1,0 +1,28 @@
+---
+# This class provides the acme.sh tool
+
+applications:
+  - acme-sh
+
+parameters:
+  app__acme__sh__command: '${app__acme__bin_dir}/acme.sh'
+  app__acme__sh__version: "3.1.0"
+  app__acme__sh__download_upstream: "https://github.com/acmesh-official/acme.sh/archive/refs/tags/${app__acme__sh__version}.tar.gz"
+  app__acme__sh__checksum: "sha256:5bc8a72095e16a1a177d1a516728bbd3436abf8060232d5d36b462fce74447aa"
+  app__acme__sh__config_dir: '${app__acme__config_dir}'
+  app__acme__sh__home: '${app__acme__home}'
+  app__acme__sh__work_dir: '${app__acme__home}/acme'
+  app__acme__sh__bin_dir: '${app__acme__home}/bin'
+  app__acme__sh__key_suffix: 'key'
+  app__acme__sh__cert_suffix: 'cer'
+  app__acme__sh__ca_basename: 'ca.${app__acme__sh__cert_suffix}'
+  app__acme__sh__chain_basename: 'fullchain.${app__acme__sh__cert_suffix}'
+  app__acme__sh__cron_user: '${app__acme__user}'
+  app__acme__sh__cron_job: '[ -x {{ app__acme__sh__command }} ] && {{ app__acme__sh__command }} --cron --home "{{ app__acme__sh__home }}" > /dev/null'
+  app__acme__sh__cron_minute: '42'
+  app__acme__sh__cron_hour: '0'
+  app__acme__sh__cron_day: '*'
+  app__acme__sh__cron_month: '*'
+  app__acme__sh__cron_weekday: '*'
+  app__acme__sh__log_dir: '${app__acme__log_dir}'
+

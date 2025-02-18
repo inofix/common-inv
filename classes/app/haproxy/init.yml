@@ -1,0 +1,27 @@
+---
+classes:
+  - app.openssl
+
+applications:
+  - haproxy
+
+parameters:
+  os__pkg_name:
+    haproxy:
+      debian:
+        - "haproxy"
+        - "ssl-cert"
+  app__haproxy__user: 'www-data'
+  app__haproxy__group: 'www-data'
+  service__webserver__user: ${app__haproxy__user}
+  service__webserver__group: ${app__haproxy__group}
+  app__haproxy__sites_dir: /etc/haproxy/sites-available
+  app__haproxy__cipher_prefered_suite: 'explicit'
+  app__haproxy__cipher_suite: ${app__openssl__cipher_suites:explicit}
+  app__haproxy__honor_cipher_order: 'on'
+  app__haproxy__config_files:
+    - "/etc/haproxy/haproxy.conf"
+  service__websites__dir: ${app__haproxy__sites_dir}
+  service__websites_owner: root
+  service__websites_group: root
+  service__websites_mode: 644
