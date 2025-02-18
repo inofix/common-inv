@@ -1,4 +1,5 @@
 ---
+# This class indicates the acme.sh tool is used for signing on that host
 
 classes:
   - app.acme.sign

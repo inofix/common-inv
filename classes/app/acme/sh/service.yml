@@ -1,0 +1,5 @@
+---
+# This class indicates the acme.sh tool is used for restarting a service on the service host.
+
+classes:
+  - app.acme.sh
