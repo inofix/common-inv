@@ -1,6 +1,9 @@
 ---
 # This class provides the acme.sh tool
 
+classes:
+  - app.acme
+
 applications:
   - acme-sh
 
