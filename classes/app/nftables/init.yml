@@ -1,0 +1,9 @@
+---
+applications:
+  - nftables
+
+parameters:
+  os__pkg_name:
+    docker:
+      debian:
+        - "nftables"
