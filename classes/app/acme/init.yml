@@ -25,6 +25,8 @@ parameters:
     - name: 'ca'
       url: 'https://letsencrypt.org/certs/isrgrootx1.pem'
       file: 'ca.crt'
-  app__acme__key_length: 2048
+  # new name - legacy values, 4now..
+  app__acme__ssh__key_type: 'rsa'
+  app__acme__ssh__key_length: '2048'
+  app__acme__key_length: ${app__acme__ssh__key_length}
   app__acme__account_key_length: 2048
-
