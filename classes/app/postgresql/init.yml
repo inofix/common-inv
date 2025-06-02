@@ -7,12 +7,6 @@ parameters:
       debian:
         - "postgresql"
         - "python-psycopg2"
-      debian_bookworm:
-        - "postgresql"
-        - "python3-psycopg2"
-      debian_bullseye:
-        - "postgresql"
-        - "python3-psycopg2"
     postgresql_client:
       debian:
         - "postgresql-client"
