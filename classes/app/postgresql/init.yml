@@ -1,0 +1,24 @@
+applications:
+  - postgresql-client
+
+parameters:
+  os__pkg_name:
+    postgresql:
+      debian:
+        - "postgresql"
+        - "python-psycopg2"
+      debian_bookworm:
+        - "postgresql"
+        - "python3-psycopg2"
+      debian_bullseye:
+        - "postgresql"
+        - "python3-psycopg2"
+    postgresql_client:
+      debian:
+        - "postgresql-client"
+  app__postgresql__version: 9.4
+  app__postgresql__user: 'postgres'
+  app__db__user: 'postgres'
+  app__postgresql__encrypt_password: 'no'
+  app__db__group: 'postgres'
+

@@ -1,0 +1,9 @@
+---
+classes:
+  - app.postgresql.client.15
+  - app.postgresql.server
+
+parameters:
+  app__postgresql__version: 15
+  app__postgresql__encrypt_password: 'yes'
+

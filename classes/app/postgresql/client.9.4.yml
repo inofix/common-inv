@@ -1,0 +1,10 @@
+---
+classes:
+  - app.postgresql
+
+applications:
+  - postgresql-client
+
+parameters:
+  app__postgresql_client__version: 9.4
+
