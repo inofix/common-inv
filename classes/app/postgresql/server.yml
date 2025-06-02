@@ -1,0 +1,8 @@
+classes:
+  - app.postgresql
+
+applications:
+  - postgresql-server
+
+parameters:
+  app__postgresql__config: /etc/postgresql/${app__postgresql__version}/main/postgresql.conf

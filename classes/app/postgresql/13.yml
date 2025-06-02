@@ -1,0 +1,9 @@
+---
+classes:
+  - app.postgresql.client.13
+  - app.postgresql.server
+
+parameters:
+  app__postgresql__version: 13
+  app__postgresql__encrypt_password: 'yes'
+
