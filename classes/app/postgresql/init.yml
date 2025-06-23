@@ -6,13 +6,20 @@ parameters:
     postgresql:
       debian:
         - "postgresql"
+        - "python3-psycopg"
+      debian_bullseye:
+        - "postgresql"
+        - "python3-psycopg2"
+      debian_buster:
+        - "postgresql"
         - "python-psycopg2"
     postgresql_client:
       debian:
         - "postgresql-client"
   app__postgresql__version: 9.4
   app__postgresql__user: 'postgres'
-  app__db__user: 'postgres'
+  app__postgresql__group: 'postgres'
   app__postgresql__encrypt_password: 'no'
-  app__db__group: 'postgres'
+  app__db__user: '${app__postgresql__user}'
+  app__db__group: '${app__postgresql__group}'
 
