@@ -7,6 +7,7 @@ applications:
 parameters:
   app__postgresql_cron__config: /etc/postgresql/${app__postgresql__version}/main/conf.d/pg_cron.conf
   app__postgresql_cron__database_name: "test_db"
+  app__postgresql_cron__metadatabase_name: "test_db"
   os__pkg_name:
     postgresql:
       debian:
