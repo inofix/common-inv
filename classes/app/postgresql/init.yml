@@ -7,6 +7,10 @@ parameters:
       debian:
         - "postgresql"
         - "python3-psycopg"
+      debian_bookworm:
+        - "postgresql"
+        - "python3-psycopg" # for Ansible
+        - "python3-psycopg2"
       debian_bullseye:
         - "postgresql"
         - "python3-psycopg2"
