@@ -7,3 +7,6 @@ applications:
 parameters:
   app__postgresql__config: "/etc/postgresql/${app__postgresql__version}/main/postgresql.conf"
   app__postgresql__hba: "/etc/postgresql/${app__postgresql__version}/main/pg_hba.conf"
+  app__postgresql__auto_schema_enabled:
+    - name: 'tables'
+      enable: False
